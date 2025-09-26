@@ -1,0 +1,36 @@
+:root{
+    --bordaLegal: 2px solid red;
+}
+.container{
+    display: grid;
+    border: var(--bordaLegal);
+    grid-template-areas: 
+        "none1 nome2 nome3"
+        "nome4 ... nome3";  
+    grid-gap: 15px;
+}
+
+
+.container2 { /* elemento pai*/
+    color: #86a8ae; /* a cor passa por herança*/
+    border: 1px solid blue;  /* a borda não passa por herança*/
+  }
+  .inherit {color: inherit; border: inherit;} /* elemento filho 2o. parágrafo*/
+  .initial {color: initial; border: initial;} /* elemento filho 3o. parágrafo*/
+  .unset {color: unset; border: unset;} /* elemento filho 4o. parágrafo*/
+ 
+  h2 {
+    color: #fc0;
+    text-align: center;
+    font: italic 30px Verdana, Sans-serif;
+    }
+
+#id1{
+    text-align: center;
+    color: greenyellow;
+}
+
+.classe1{
+    text-align: center;
+    color: red;
+}
